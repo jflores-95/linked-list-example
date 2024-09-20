@@ -48,7 +48,7 @@ class LinkedList {
       const node = new Node(data);
       if(index === 0){
           this.insertFirst(data);
-      } else if(index > size){
+      } else if(index > this.size){
           this.insertLast(data);
       } else {
           let node = new Node(data);
@@ -85,5 +85,6 @@ const linkedList = new LinkedList();
 linkedList.insertFirst(100);
 linkedList.insertFirst(200);
 linkedList.insertFirst(300);
-linkedList.insertLast(400)
+linkedList.insertLast(400);
+linkedList.insertAtIndex(350, 3);
 linkedList.printListData();
